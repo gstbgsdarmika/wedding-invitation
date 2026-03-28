@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "Balinese Hindu Wedding Invitation - Pawiwahan Dewa Dhar & Gek Cantik",
   "scripts": {
-    "dev": "npx tailwindcss -i ./styles.css -o ./dist/styles.css --watch",
-    "build": "npx tailwindcss -i ./styles.css -o ./dist/styles.css --minify",
-    "start": "npx tailwindcss -i ./styles.css -o ./dist/styles.css --watch"
+    "dev": "npx tailwindcss -i ./styles.css -o ./styles.css --watch",
+    "build": "npx tailwindcss -i ./styles.css -o ./styles.css --minify",
+    "start": "npx tailwindcss -i ./styles.css -o ./styles.css --watch"
   },
   "keywords": [
     "wedding",

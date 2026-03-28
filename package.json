@@ -1,0 +1,24 @@
+{
+  "name": "wedding-invitation",
+  "version": "1.0.0",
+  "description": "Balinese Hindu Wedding Invitation - Pawiwahan Dewa Dhar & Gek Cantik",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./styles.css -o ./dist/styles.css --watch",
+    "build": "npx tailwindcss -i ./styles.css -o ./dist/styles.css --minify",
+    "start": "npx tailwindcss -i ./styles.css -o ./dist/styles.css --watch"
+  },
+  "keywords": [
+    "wedding",
+    "invitation",
+    "pawiwahan",
+    "bali",
+    "hindu"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.4.0",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.32"
+  }
+}

@@ -1,0 +1,533 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pawiwahan Dewa Dhar & Gek Cantik - Undangan</title>
+    <meta
+      name="description"
+      content="Pawiwahan Dewa Dhar & Gek Cantik - Acara Pada hari Rabu, 22 Februari 2023"
+    />
+    <meta
+      property="og:title"
+      content="Pawiwahan Dewa Dhar & Gek Cantik - Undangan"
+    />
+    <meta
+      property="og:description"
+      content="Acara Pada hari Rabu, 22 Februari 2023"
+    />
+    <meta
+      property="og:image"
+      content="https://storage.googleapis.com/stateless-swalapatra-com/2023/02/39b71df7-tum.jpg"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Great+Vibes&family=Montserrat:wght@300;400;500;600;700&family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Tailwind CSS CDN (for development) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              gold: {
+                DEFAULT: "#d4af37",
+                light: "#f4e4bc",
+              },
+              "bali-green": {
+                DEFAULT: "#1e4032",
+                light: "#2d5a4a",
+              },
+              cream: "#faf8f5",
+            },
+            fontFamily: {
+              greatvibes: ["Great Vibes", "cursive"],
+              cormorant: ["Cormorant Garamond", "serif"],
+              nunito: ["Nunito", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="overflow-hidden">
+    <!-- Audio Element -->
+    <audio id="bgMusic" loop>
+      <source src="musik.mp3" type="audio/mpeg" />
+    </audio>
+
+    <!-- Modal Cover -->
+    <div id="modalCover" class="modal-cover">
+      <div class="modal-overlay"></div>
+      <div class="modal-content">
+        <div class="modal-info">
+          <img
+            src="https://storage.googleapis.com/stateless-swalapatra-com/2023/02/3baab5b7-mx4_3022.jpg"
+            alt="Couple"
+            class="modal-image"
+          />
+          <p class="modal-dear">Kpd Bpk/Ibu/Saudara/i</p>
+          <h2 class="modal-name" id="guestName">Krisna</h2>
+          <p class="modal-text">
+            Mohon maaf apabila ada kesalahan penulisan nama/gelar
+          </p>
+          <button id="btnBuka" class="modal-btn">
+            <i class="far fa-envelope-open"></i>
+            <span>Buka Undangan</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <main id="mainContent" class="opacity-0 main-wrapper">
+      <!-- Section 1: Hero -->
+      <section
+        class="relative flex items-center justify-center min-h-screen overflow-hidden hero-section"
+      >
+        <div class="hero-bg"></div>
+        <div class="relative z-10 px-4 text-center text-white hero-content">
+          <h1 class="mb-2 text-2xl tracking-widest hero-title">PAWIWAHAN</h1>
+          <p
+            class="mb-8 text-3xl hero-names md:text-5xl lg:text-6xl font-cormorant"
+          >
+            Dewa Dhar & Gek Cantik
+          </p>
+          <div class="h-16 spacer"></div>
+          <p class="mb-8 text-lg tracking-widest hero-save">SAVE THE DATE</p>
+
+          <!-- Countdown -->
+          <div class="flex justify-center gap-3 countdown-wrapper md:gap-6">
+            <div class="countdown-item">
+              <span class="countdown-number" id="days">00</span>
+              <span class="countdown-label">Hari</span>
+            </div>
+            <div class="countdown-item">
+              <span class="countdown-number" id="hours">00</span>
+              <span class="countdown-label">Jam</span>
+            </div>
+            <div class="countdown-item">
+              <span class="countdown-number" id="minutes">00</span>
+              <span class="countdown-label">Menit</span>
+            </div>
+            <div class="countdown-item">
+              <span class="countdown-number" id="seconds">00</span>
+              <span class="countdown-label">Detik</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 2: Welcome/Quote -->
+      <section class="px-4 py-16 welcome-section md:py-24">
+        <div class="welcome-decoration animate-fade-up">
+          <img
+            src="https://storage.googleapis.com/stateless-swalapatra-com/2022/11/db822cc5-flower.png"
+            alt="Decoration"
+            class="w-20 mx-auto md:w-32"
+          />
+        </div>
+
+        <div class="mt-12 quote-section md:mt-16 animate-fade-up">
+          <p
+            class="text-xl italic leading-relaxed quote-text font-cormorant md:text-2xl lg:text-3xl"
+          >
+            "Ihaiva stam ma vi yaustam, visvam ayur vyasnutam,<br />
+            kridantau putrair naptrbhih, modamanau sve grhe."
+          </p>
+          <p class="mt-4 text-sm tracking-widest quote-source">
+            (Rg Veda X.85.42)
+          </p>
+          <p
+            class="max-w-2xl mx-auto mt-6 text-base leading-relaxed quote-translation md:mt-8 md:text-lg"
+          >
+            Wahai pasangan suami-istri, semoga kalian tetap bersatu dan tidak
+            pernah terpisahkan.<br />
+            Semoga kalian mencapai hidup penuh kebahagiaan, tinggal di rumah
+            yang penuh kegembiraan bersama seluruh keturunanmu.
+          </p>
+        </div>
+      </section>
+
+      <!-- Section 3: Mempelai -->
+      <section class="px-4 py-16 mempelai-section md:py-24">
+        <div class="section-header animate-fade-up">
+          <h2 class="text-3xl section-title font-cormorant md:text-4xl">
+            Mempelai
+          </h2>
+        </div>
+
+        <div class="mt-12 mempelai-grid md:mt-16">
+          <!-- Male -->
+          <div class="mempelai-card animate-fade-left">
+            <div class="mx-auto mb-6 mempelai-frame">
+              <img
+                src="https://storage.googleapis.com/stateless-swalapatra-com/2023/02/f8e8bcc2-mx4_2823-768x1150.jpg"
+                alt="Dewa Dhar"
+                class="object-cover w-full h-full"
+              />
+            </div>
+            <h3
+              class="mb-2 text-4xl text-white mempelai-nickname font-greatvibes md:text-5xl"
+            >
+              Dewa Dhar
+            </h3>
+            <p
+              class="mb-6 text-xl font-semibold mempelai-fullname font-cormorant md:text-2xl"
+            >
+              Dewa Gede Dharmendra
+            </p>
+            <p class="text-sm leading-relaxed mempelai-parents md:text-base">
+              Putra Ketiga dari pasangan<br />
+              <strong class="font-semibold">Dewa Ketut Alit</strong><br />
+              &amp;<br />
+              <strong class="font-semibold">Desak Putu Aryanti</strong
+              ><br /><br />
+              <span class="opacity-75">Br. Menak Tulikup, Gianyar</span>
+            </p>
+          </div>
+
+          <!-- Female -->
+          <div class="mempelai-card animate-fade-right">
+            <div class="mx-auto mb-6 mempelai-frame">
+              <img
+                src="https://storage.googleapis.com/stateless-swalapatra-com/2023/02/b063d7f7-mx4_2807-768x1150.jpg"
+                alt="Gek Cantik"
+                class="object-cover w-full h-full"
+              />
+            </div>
+            <h3
+              class="mb-2 text-4xl text-white mempelai-nickname font-greatvibes md:text-5xl"
+            >
+              Gek Cantik
+            </h3>
+            <p
+              class="mb-6 text-xl font-semibold mempelai-fullname font-cormorant md:text-2xl"
+            >
+              I Gusti Ayu Diah Cahya Dewi
+            </p>
+            <p class="text-sm leading-relaxed mempelai-parents md:text-base">
+              Putri Pertama dari pasangan<br />
+              <strong class="font-semibold">I Gusti Nyoman Ngurah (Alm)</strong
+              ><br />
+              &amp;<br />
+              <strong class="font-semibold">Ni Gusti Putu Luwes</strong
+              ><br /><br />
+              <span class="opacity-75"
+                >Br. Prajamukti, Bona, Blahbatuh, Gianyar</span
+              >
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 4: Events -->
+      <section
+        class="flex items-center justify-center min-h-screen px-4 py-16 events-section md:py-24"
+      >
+        <div class="events-bg"></div>
+        <div class="relative z-10 w-full max-w-4xl events-content">
+          <div class="text-center events-header animate-fade-up">
+            <img
+              src="https://storage.googleapis.com/stateless-swalapatra-com/2022/12/345dfe2b-leaves-gold-divider-ptsd9ydbcwhhbb2jkonn21n0w8vtqyp4vffp5pvtba.png"
+              alt="Divider"
+              class="w-24 mx-auto mb-6 md:w-32"
+            />
+            <h2
+              class="mb-4 text-3xl text-white events-title font-cormorant md:text-4xl"
+            >
+              Acara Kami
+            </h2>
+            <p class="text-xl events-date md:text-2xl text-gold-light">
+              Rabu,<br />
+              22 Februari 2023
+            </p>
+          </div>
+
+          <div class="mt-12 timeline-wrapper md:mt-16">
+            <!-- Timeline Item 1 -->
+            <div class="timeline-item animate-fade-up">
+              <div class="timeline-marker">
+                <i class="fas fa-praying-hands"></i>
+              </div>
+              <div class="timeline-content">
+                <h3 class="text-2xl timeline-title font-cormorant md:text-3xl">
+                  Merdaspanti
+                </h3>
+                <p class="mt-2 timeline-info">
+                  <span class="timeline-date">Minggu, 19 Februari 2023</span
+                  ><br />
+                  <span class="timeline-time">09.00 WITA - Selesai</span>
+                </p>
+                <p
+                  class="mt-3 text-sm timeline-location md:text-base opacity-90"
+                >
+                  Di Rumah Mempelai Wanita<br />
+                  Br. Prajamukti, Bona, Blahbatuh, Gianyar
+                </p>
+              </div>
+            </div>
+
+            <!-- Timeline Item 2 -->
+            <div class="timeline-item animate-fade-up">
+              <div class="timeline-marker">
+                <i class="fas fa-fire"></i>
+              </div>
+              <div class="timeline-content">
+                <h3 class="text-2xl timeline-title font-cormorant md:text-3xl">
+                  Pawiwahan
+                </h3>
+                <p class="mt-2 timeline-info">
+                  <span class="timeline-date">Rabu, 22 Februari 2023</span
+                  ><br />
+                  <span class="timeline-time">15.00 WITA - Selesai</span>
+                </p>
+                <p
+                  class="mt-3 text-sm timeline-location md:text-base opacity-90"
+                >
+                  Di Rumah Mempelai Wanita<br />
+                  Br. Prajamukti, Bona, Blahbatuh, Gianyar
+                </p>
+              </div>
+            </div>
+
+            <!-- Timeline Item 3 -->
+            <div class="timeline-item animate-fade-up">
+              <div class="timeline-marker">
+                <i class="fas fa-utensils"></i>
+              </div>
+              <div class="timeline-content">
+                <h3 class="text-2xl timeline-title font-cormorant md:text-3xl">
+                  Ngramse
+                </h3>
+                <p class="mt-2 timeline-info">
+                  <span class="timeline-date">Kamis, 23 Februari 2023</span
+                  ><br />
+                  <span class="timeline-time">18.00 WITA - Selesai</span>
+                </p>
+                <p
+                  class="mt-3 text-sm timeline-location md:text-base opacity-90"
+                >
+                  Di Rumah Mempelai Wanita<br />
+                  Br. Prajamukti, Bona, Blahbatuh, Gianyar
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 5: Location -->
+      <section class="px-4 py-16 location-section md:py-24">
+        <div class="text-center location-header animate-fade-up">
+          <h2 class="text-3xl section-title font-cormorant md:text-4xl">
+            Lokasi
+          </h2>
+        </div>
+
+        <div
+          class="max-w-3xl mx-auto mt-12 text-center location-content md:mt-16"
+        >
+          <div class="mb-4 text-2xl location-name font-cormorant md:text-3xl">
+            Di Rumah Mempelai Wanita
+          </div>
+          <p class="mb-8 location-address text-gold">
+            Br. Prajamukti, Bona, Blahbatuh, Gianyar, Bali
+          </p>
+
+          <div
+            class="overflow-hidden rounded-lg shadow-xl map-container animate-fade-up"
+          >
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3946.4789!2d115.2837!3d-8.5382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zOMKwMzInMTguOCJTIDExNcKwMTcnMDAuMCJF!5e0!3m2!1sen!2sid!4v1234567890"
+              width="100%"
+              height="350"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            >
+            </iframe>
+          </div>
+
+          <a
+            href="https://maps.google.com/?q=Br.+Prajamukti,+Bona,+Blahbatuh,+Gianyar,+Bali"
+            target="_blank"
+            class="inline-flex items-center gap-2 px-6 py-3 mt-8 text-white transition-all duration-300 rounded-full btn-maps"
+          >
+            <i class="fas fa-directions"></i>
+            <span>Buka di Google Maps</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- Section 6: RSVP / Buku Tamu -->
+      <section class="px-4 py-16 rsvp-section md:py-24">
+        <div class="max-w-xl mx-auto rsvp-content">
+          <div class="text-center rsvp-header animate-fade-up">
+            <h2 class="mb-4 text-3xl section-title font-cormorant md:text-4xl">
+              Konfirmasi Kehadiran
+            </h2>
+            <p class="text-base opacity-80">
+              Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila<br />Bapak/Ibu/Saudara/i
+              berkenan hadir dalam acara kami.
+            </p>
+          </div>
+
+          <form id="rsvpForm" class="mt-12 rsvp-form animate-fade-up">
+            <div class="form-group">
+              <label for="nama" class="form-label">Nama Lengkap</label>
+              <input
+                type="text"
+                id="nama"
+                name="nama"
+                class="form-input"
+                placeholder="Masukkan nama Anda"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="jumlah" class="form-label">Jumlah Tamu</label>
+              <select id="jumlah" name="jumlah" class="form-input" required>
+                <option value="">Pilih jumlah tamu</option>
+                <option value="1">1 Orang</option>
+                <option value="2">2 Orang</option>
+                <option value="3">3 Orang</option>
+                <option value="4">4 Orang</option>
+                <option value="5">5+ Orang</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="konfirmasi" class="form-label"
+                >Konfirmasi Kehadiran</label
+              >
+              <select
+                id="konfirmasi"
+                name="konfirmasi"
+                class="form-input"
+                required
+              >
+                <option value="">Pilih konfirmasi</option>
+                <option value="hadir">Ya, Saya Akan Hadir</option>
+                <option value="tidak">Maaf, Saya Tidak Bisa Hadir</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="pesan" class="form-label">Pesan & Doa</label>
+              <textarea
+                id="pesan"
+                name="pesan"
+                class="form-input"
+                rows="4"
+                placeholder="Tulis pesan dan doa untuk kedua mempelai..."
+              ></textarea>
+            </div>
+
+            <button
+              type="submit"
+              class="w-full px-8 py-4 font-semibold tracking-wider text-white transition-all duration-300 rounded-full form-submit"
+            >
+              <i class="mr-2 fas fa-paper-plane"></i>
+              Kirim Konfirmasi
+            </button>
+          </form>
+
+          <!-- Comments Section -->
+          <div class="mt-16 comments-section animate-fade-up">
+            <h3
+              class="mb-8 text-2xl text-center comments-title font-cormorant md:text-3xl"
+            >
+              Ucapan & Doa
+            </h3>
+            <div id="commentsContainer" class="space-y-6 comments-list">
+              <!-- Comments will be loaded here -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 7: Gallery -->
+      <section class="px-4 py-16 bg-white gallery-section md:py-24">
+        <div class="text-center gallery-header animate-fade-up">
+          <h2 class="text-3xl section-title font-cormorant md:text-4xl">
+            Galeri
+          </h2>
+        </div>
+
+        <div class="mt-12 gallery-grid md:mt-16">
+          <div class="gallery-item animate-zoom-in">
+            <img
+              src="https://storage.googleapis.com/stateless-swalapatra-com/2023/02/4ec499af-cvr.jpg"
+              alt="Gallery 1"
+              class="object-cover w-full h-full"
+            />
+          </div>
+          <div class="gallery-item animate-zoom-in">
+            <img
+              src="https://storage.googleapis.com/stateless-swalapatra-com/2023/02/f8e8bcc2-mx4_2823-768x1150.jpg"
+              alt="Gallery 2"
+              class="object-cover w-full h-full"
+            />
+          </div>
+          <div class="gallery-item animate-zoom-in">
+            <img
+              src="https://storage.googleapis.com/stateless-swalapatra-com/2023/02/b063d7f7-mx4_2807-768x1150.jpg"
+              alt="Gallery 3"
+              class="object-cover w-full h-full"
+            />
+          </div>
+          <div class="gallery-item animate-zoom-in">
+            <img
+              src="https://storage.googleapis.com/stateless-swalapatra-com/2023/02/3baab5b7-mx4_3022.jpg"
+              alt="Gallery 4"
+              class="object-cover w-full h-full"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="px-4 py-12 text-center footer-section md:py-16">
+        <p
+          class="mb-4 text-4xl footer-names font-greatvibes md:text-5xl text-gold"
+        >
+          Dewa Dhar & Gek Cantik
+        </p>
+        <p class="text-sm tracking-widest footer-hashtag opacity-70">
+          #DewaDharGekCantikWedding
+        </p>
+        <div class="my-8 footer-divider"></div>
+        <p class="text-sm opacity-50 footer-credit">
+          Undangan Digital oleh WeddingPress
+        </p>
+      </footer>
+    </main>
+
+    <!-- Floating Music Button -->
+    <button
+      id="musicBtn"
+      class="fixed z-50 flex items-center justify-center rounded-full shadow-lg music-btn bottom-6 right-6 w-14 h-14"
+    >
+      <i class="text-xl fas fa-music"></i>
+    </button>
+
+    <!-- Floating Petals -->
+    <div
+      id="petals"
+      class="fixed inset-0 z-40 overflow-hidden pointer-events-none petals-container"
+    ></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
